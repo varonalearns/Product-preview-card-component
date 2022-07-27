@@ -56,7 +56,8 @@ p {
 }
 button {
     height: 50px;
-    margin: 0 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
     border: none;
     font-size: 14px;
     font-weight: 700;
@@ -66,6 +67,10 @@ button {
 }
 button img {
     margin-right: 0.5rem;
+}
+button:hover {
+    background-color: rgb(26,  64, 50);
+    cursor: pointer;
 }
 footer {
     margin: 0 1rem;
@@ -78,12 +83,15 @@ footer a {
     text-decoration: none;
 }
 footer a:hover {
-    color: var(--neu-dk-blue);
+    color: rgb(26,  64, 50);
 }
 
 /* -------------------- 
     Specific Styles
 ---------------------*/
+.container {
+    margin: 1.25rem;
+}
 .card-img {
     height: 35%;
     border-top-left-radius: 1rem;
@@ -91,12 +99,12 @@ footer a:hover {
     background: no-repeat center/cover url("images/image-product-mobile.jpg");
 }
 .card-txt {
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Card Price div */
 .card-price {
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 .sale {
     font-size: 32px;
@@ -124,8 +132,8 @@ footer a:hover {
         min-height: 100vh;
     }
     main {
-        max-height: 650px;
-        max-width: 375px;
+        height: 650px;
+        width: 340px;
     }
     /* -------------------- 
         Specific Styles
@@ -137,28 +145,28 @@ footer a:hover {
 }
 
 /*----------------------------------------------------------------------------
-    Tablet Design
-------------------------------------------------------------------------------*/
-@media screen and (min-width: 700px) {
-
-}
-
-/*----------------------------------------------------------------------------
     Sm Desktop Design
 ------------------------------------------------------------------------------*/
 @media screen and (min-width: 900px) {
+    /* -------------------- 
+        General Styles
+    ---------------------*/
+    main {
+        width: 532px;
+        height: 400px;
+        flex-direction: row;
+    }
 
-}
-/*----------------------------------------------------------------------------
-    lg Desktop Design
-------------------------------------------------------------------------------*/
-@media screen and (min-width: 1200px) {
-
-}
-
-/*----------------------------------------------------------------------------
-    lg Desktop Design
-------------------------------------------------------------------------------*/
-@media screen and (min-width: 1400px) {
-
+    /* -------------------- 
+        Specific Styles
+    ---------------------*/
+    .container {
+        width: 50%;
+    }
+    .card-img {
+        width: 50%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+        background: no-repeat center/cover url("images/image-product-desktop.jpg");
+    }
 }
