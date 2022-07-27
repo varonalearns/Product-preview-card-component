@@ -29,14 +29,56 @@
 body {
     font-family: var(--ff-txt);
     font-size: 14px;
+    background-color: var(--prim-cream);
+}
+main {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neu-white);
+    margin: 2rem 1rem;
+    border-radius: 1rem;
+}
+h3 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 h1 {
     font-family: var(--ff-title);
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+}
+p {
+    line-height: 1.5;
+}
+button {
+    margin: 1rem;
 }
 
 /* -------------------- 
     Specific Styles
 ---------------------*/
+.card-img {
+    height: 35%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background: no-repeat center/cover url("images/image-product-mobile.jpg");
+}
+.card-txt {
+    margin: 1rem;
+}
+
+/* Card Price div */
+.card-price {
+    margin: 1rem;
+}
+.sale {
+    font-size: 32px;
+    font-family: var(--ff-title);
+    color: var(--prim-dk-cyan);
+    margin-right: 1rem;
+}
 
 /*----------------------------------------------------------------------------
     Tablet Design
